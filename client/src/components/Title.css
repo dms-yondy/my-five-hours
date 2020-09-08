@@ -1,0 +1,29 @@
+.title-container {
+    margin-top: 10em;
+    display: grid;
+    grid-template: 
+        'Title'
+        'Subtitle'
+        'Button';
+    justify-content: center;
+    grid-gap: 2em;
+}
+
+.title-container__title {
+    grid-area: Title;
+    font-size: 5em;
+}
+
+.title-container__subtitle {
+    display: flex;
+    grid-area: Subtitle;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+.title-container__btns {
+    grid-area: Button;
+    display: flex;
+    justify-content: center;
+}
+
