@@ -1,12 +1,14 @@
 .title-container {
-    margin-top: 10em;
+    position: absolute;
+    top: 30%;
+    width: 100%;
     display: grid;
     grid-template: 
         'Title'
         'Subtitle'
         'Button';
-    justify-content: center;
     grid-gap: 2em;
+    justify-items: center;
 }
 
 .title-container__title {
@@ -15,15 +17,17 @@
 }
 
 .title-container__subtitle {
-    display: flex;
     grid-area: Subtitle;
     font-size: 1.5em;
-    justify-content: center;
 }
 
 .title-container__btns {
-    grid-area: Button;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.title-container__btn {
+    margin: 1em;
 }
 

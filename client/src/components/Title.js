@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Button} from './Button';
+import {Button} from '@material-ui/core';
+import {Link} from 'react-router-dom';
 import './Title.css';
 
 function Title() {
@@ -8,9 +9,14 @@ function Title() {
     return(
         <div className='title-container'>
             <h1 className='title-container__title'>My Five Hours</h1>
-            <p className='title-container__subtitle'>Be the best possbile you</p>
+            <p className='title-container__subtitle'>Be the best possible you</p>
             <div className='title-container__btns'>
-                {button && <Button buttonStyle='btn--primary'>SIGN UP</Button>}
+                <Link to='/sign-in' className='title-container__btn'>
+                    <Button variant="outlined" color="primary" size="large">SIGN IN</Button>
+                </Link>
+                <Link to='/sign-up' className='title-container__btn'>
+                    <Button variant="outlined" color="primary" size="large">SIGN UP</Button>
+                </Link>
             </div>
         </div>
     )
