@@ -31,7 +31,6 @@ const formatDate = (date) => {
 export default function PastCard(props) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
-  console.log(props);
   return (
     <Card className={classes.root}>
       <CardContent>

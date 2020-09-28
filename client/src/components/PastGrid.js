@@ -23,8 +23,8 @@ export default function SpacingGrid(props) {
   return (
     <Grid container spacing={3}>
       {props.array.map( item => (
-        <Grid item container justify="center" xs={3}>
-          <PastCard date={item.date} topic={item.topic} learnt={item.learnt} /> 
+        <Grid item container justify="center" xs={12} sm={6} lg={3}>
+          <PastCard key={item.key} date={item.date} topic={item.topic} learnt={item.learnt} /> 
         </Grid>  
       ))}
     </Grid>
