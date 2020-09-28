@@ -12,6 +12,7 @@ function Title() {
             <p className='title-container__subtitle'>Be the best possible you</p>
             <div className='title-container__btns'>
                 <Link to='/sign-in' className='title-container__btn'>
+                    {/* <Button variant="outlined" color="primary" size="large">SIGN IN</Button> */}
                     <Button variant="outlined" color="primary" size="large">SIGN IN</Button>
                 </Link>
                 <Link to='/sign-up' className='title-container__btn'>
