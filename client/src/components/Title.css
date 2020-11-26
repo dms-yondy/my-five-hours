@@ -1,34 +1,26 @@
 .title-container {
+    background-image: url('https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    display: flex;
     position: absolute;
     top: 30%;
     width: 100%;
-    display: grid;
-    grid-template: 
-        'Title'
-        'Subtitle'
-        'Button';
-    grid-gap: 2em;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.title-container__title {
-    grid-area: Title;
-    font-size: 5em;
+.title-container > * {
+    padding: 0 5em;
 }
 
-.title-container__subtitle {
-    grid-area: Subtitle;
-    font-size: 1.5em;
+.title-container__image__container__image {
+    width: 500px;
 }
 
-.title-container__btns {
+.title-container__text {
     display: flex;
     flex-direction: column;
-    justify-items: center;
 }
-
-.title-container__btn {
-    margin: 1em;
-    text-align: center;
+.title-container__text > * {
+    margin-bottom: 1.5em;
 }
 

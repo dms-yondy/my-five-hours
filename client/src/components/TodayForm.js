@@ -1,28 +1,53 @@
-import React from 'react'
-import {useForm} from 'react-hook-form'
-import {Button, TextField} from '@material-ui/core';
+import React, {useState, useEffect} from 'react'
+import {Button, makeStyles, TextField} from '@material-ui/core';
 import './TodayForm.css'
+import { red } from '@material-ui/core/colors';
+
+const useStyles = makeStyles({
+
+    todayForm: {
+        backgroundColor: red
+        // display: "flex",
+        // flexDirection: "column",
+        // textAlign: "center",
+        // justifySelf: "center",
+        // justifyContent: "center",
+        // margin: "0 auto"
+    },
+    // formElement: {
+    //     display: flex,
+    //     flexDirection: column,
+    //     justifyItems: center,
+    //     margin: "2em"
+    // },
+    // formButton: {
+    //     display: flex,
+    //     justifyContent: center
+    // }
+});
+
+const initialValue = {
+    key: 0,
+    date : new Date(),
+    topic: "",
+    learnt: "",
+}
 
 function TodayForm() {
-    const {resigster, handleSubmit, errors} = useForm();
 
-    const onSubmit = (data) => {
-        console.log(data)
-    }
+    const [values, setValues] = useState(initialValue);
+    const styles = useStyles()
+
 
     return (
-        <form className="todayForm" onSubmit={handleSubmit(onSubmit())}>
+        <form className={styles.todayForm}>
             <div className="form--element">
                 <label for="topic">What topic did you learn about today?</label>
-                <TextField id="topic" label="" variant="outlined" ref={resigster}/>
+                <TextField id="topic" label="" variant="outlined" value={values.topic}/>
             </div>
             <div className="form--element">
                 <label for="content">What specifically did you learn?</label>
-                <TextField id="content" label="" variant="outlined" ref={resigster}/>
-            </div>
-            <div className="form--element">
-                <label for="takeaway">What did you think you gained by learning this topic today?</label>
-                <TextField id="takeaway" label="" variant="outlined" ref={resigster}/>
+                <TextField id="content" label="" variant="outlined" value={values.learnt}/>
             </div>
             <div className="form--button">
                 <Button variant="outlined" color="primary">SUBMIT</Button>

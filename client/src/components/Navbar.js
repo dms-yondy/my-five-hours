@@ -33,40 +33,27 @@ function Navbar() {
                     <FontAwesomeIcon icon={click ? faTimes : faBars} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className='nav-item'>
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                    Home
-                </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
-                    to='/today'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                >
-                    Today
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
-                    to='/past'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                >
-                    Past
-                    </Link>
-                </li>
                 <li>
                     <Link
                     to='/sign-up'
                     className='nav-links-mobile'
                     onClick={closeMobileMenu}
-                >
+                    >
                     Sign Up
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                    to='/log-in'
+                    className='nav-links-mobile'
+                    onClick={closeMobileMenu}
+                    >
+                    Log in
                     </Link>
                 </li>
             </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>LOG IN</Button>}
         </div>
       </nav>
     </>
