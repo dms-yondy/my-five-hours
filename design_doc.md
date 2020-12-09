@@ -42,3 +42,17 @@ This application will be built using the so-called "MERN" stack. MongoDB will be
 - [ ] implement user login and sign up for the backend
 
 
+## 7/12/20
+
+- [X] created new responsive navbar
+- [X] created simple footer
+
+## 8/12/20
+
+- [X] create login page and linked it to backend
+- [X] create sign up page linked it to backend
+
+
+## 10/12/20
+
+- [X] created homepage

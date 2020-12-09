@@ -1,0 +1,23 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: left;
+    height: 2.5rem;
+}
+
+.footer-logo {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.6em;
+}
