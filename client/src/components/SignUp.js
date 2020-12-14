@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { Button } from './Button';
 import axios from 'axios';
 import './SignUp.css'
 
@@ -37,16 +38,20 @@ export default function SignUp() {
     }
 
     return (
-        <form className="sign-up-form" onSubmit={handleSubmit}>
-            <label htmlFor="username">Username:</label>
-            <input type="text" name="username" id="username" value={username} onChange={handleChange}></input>
-            <label htmlFor="email">Email:</label>
-            <input type="email" name="email" id="email" value={email} onChange={handleChange}></input>
-            <label htmlFor="password">Password:</label>
-            <input type="password" name="password" id="password" value={password} onChange={handleChange}></input>
-            <label htmlFor="confirm-password">Confirm Password:</label>
-            <input type="password" name="confirm-password" id="confirm-password" value={confirmPassword} onChange={handleChange}></input>
-            <button type="submit">SIGN UP</button>
-        </form>
+        <div>
+            <form className="sign-up-form" onSubmit={handleSubmit}>
+                <label htmlFor="username">Username:</label>
+                <input type="text" name="username" id="username" value={username} onChange={handleChange}></input>
+                <label htmlFor="email">Email:</label>
+                <input type="email" name="email" id="email" value={email} onChange={handleChange}></input>
+                <label htmlFor="password">Password:</label>
+                <input type="password" name="password" id="password" value={password} onChange={handleChange}></input>
+                <label htmlFor="confirm-password">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" value={confirmPassword} onChange={handleChange}></input>
+                <div>
+                    <Button>SIGN UP</Button>
+                </div>
+            </form>
+        </div>
     )
 }

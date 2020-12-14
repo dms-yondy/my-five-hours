@@ -24,15 +24,25 @@
 
 .home-container__tagline {
     font-size: 1.0em;
-    font-weight: bold;
 }
 
 
 .home-container__button {
-    width: 100px;
-    text-align: center;
+    width: 200px;
 }
 
 @media screen and (min-width: 1000px) {
+    
+    .home-container__title {
+        font-size: 5em;
+    }
 
+    .home-container__tagline {
+        font-size: 2em;
+    }
+    
+    .home-container-content {
+        padding-left: 10em;
+        padding-top: 6em;
+    }
 }

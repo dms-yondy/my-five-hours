@@ -4,3 +4,9 @@
     align-items: center;
     margin-top: 2em;
 }
+
+.sign-up-form > * {
+    width: 200px;
+    padding: 1em;
+    text-align: center;
+}
