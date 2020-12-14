@@ -38,16 +38,24 @@ export default function SignUp() {
     }
 
     return (
-        <div>
+        <div className="sign-up--container">
             <form className="sign-up-form" onSubmit={handleSubmit}>
-                <label htmlFor="username">Username:</label>
-                <input type="text" name="username" id="username" value={username} onChange={handleChange}></input>
-                <label htmlFor="email">Email:</label>
-                <input type="email" name="email" id="email" value={email} onChange={handleChange}></input>
-                <label htmlFor="password">Password:</label>
-                <input type="password" name="password" id="password" value={password} onChange={handleChange}></input>
-                <label htmlFor="confirm-password">Confirm Password:</label>
-                <input type="password" name="confirm-password" id="confirm-password" value={confirmPassword} onChange={handleChange}></input>
+                <div className="form-item">
+                    <label htmlFor="username">Username:</label>
+                    <input type="text" name="username" id="username" value={username} onChange={handleChange}></input>
+                </div>
+                <div className="form-item">
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email" id="email" value={email} onChange={handleChange}></input>
+                </div>
+                <div className="form-item">
+                    <label htmlFor="password">Password:</label>
+                    <input type="password" name="password" id="password" value={password} onChange={handleChange}></input>
+                </div>
+                <div className="form-item">
+                    <label htmlFor="confirm-password">Confirm Password:</label>
+                    <input type="password" name="confirm-password" id="confirm-password" value={confirmPassword} onChange={handleChange}></input>
+                </div>
                 <div>
                     <Button>SIGN UP</Button>
                 </div>
