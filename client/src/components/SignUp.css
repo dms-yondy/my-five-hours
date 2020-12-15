@@ -3,13 +3,16 @@
     background-image: url('../images/pexels-andrea-piacquadio-3807755.jpg');
     background-size: cover;
     background-position: center;
-}
-
-.sign-up-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 5em;
+}
+.sign-up-form__title {
+    color: white;
+}
+.sign-up-form {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .sign-up-form > * {
@@ -22,12 +25,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.2em;
+    color: white;
 }
 
-@media screen and (min-width: 1000px) {
-
-    .form-item {
-        color: white;
-    }
-
-}

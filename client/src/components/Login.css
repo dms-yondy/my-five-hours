@@ -1,14 +1,34 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-}
-
-.form {
+    height: 100%;
+    background-image: url('../images/pexels-cottonbro-4626338.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.login-title {
+    color: white;
+}
+.form--login-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
 
+
+.form--login-in > * {
+    width: 400px;
+    padding: 1em;
+    text-align: center;
+}
+
+.form--login-in__item {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2em;
+}

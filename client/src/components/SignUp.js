@@ -40,6 +40,7 @@ export default function SignUp() {
     return (
         <div className="sign-up--container">
             <form className="sign-up-form" onSubmit={handleSubmit}>
+                <h1 className="sign-up-form__title">Sign Up</h1>
                 <div className="form-item">
                     <label htmlFor="username">Username:</label>
                     <input type="text" name="username" id="username" value={username} onChange={handleChange}></input>
