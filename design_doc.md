@@ -56,3 +56,16 @@ This application will be built using the so-called "MERN" stack. MongoDB will be
 ## 10/12/20
 
 - [X] created homepage
+
+
+# Road map for 2021
+
+In the month of january I would like to complete my redesign of the my five hours app. While my first try at designing and building this app was a great learning experience, overall I was unhappy with the final project. I felt that the way I had implemented the app hadn't achieved the functionality that I wanted when I started the project.
+
+My goal for the redesign was to turn the app into a habit builder and to also improve the UI. At the end of last year I started the redesign. I created and implemented a new UI, as well as improving the code in the backend for the login and sign up. I am a lot happier with the results so far. The second part now is to create a dashboard to help the user build the habit of studying for one hour a day five times a week.
+
+## Goals
+
+- [ ] figure out how to store the data for each user
+- [ ] create a one hour timer for the user to use while they are studying
+- [ ] design a navbar for the dashboard
