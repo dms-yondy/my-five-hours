@@ -69,3 +69,36 @@ My goal for the redesign was to turn the app into a habit builder and to also im
 - [ ] figure out how to store the data for each user
 - [ ] create a one hour timer for the user to use while they are studying
 - [ ] design a navbar for the dashboard
+
+
+## Idea for How to Model User Data
+
+Each user will have a weeks array which is made up of `Week` objects
+
+``` javascript
+User {
+    ...
+    weeks [
+        {...week one object},
+        {...week two object},
+        {...week three object}
+        ...
+        {...week fifty two object}
+    ]
+}
+```
+
+The `Week` object is made up seven day objects. The first and last weeks of the year might have less than seven objects depending on when the year starts and ends. The keys for each day object will be 0,1,2,3,4,5,6. This means that we can use the `Date` object in order to look up the current day. The week object will also have a completed boolean which is true if the user has done five hours of study that week.
+
+``` javascript
+    {
+        0 : {monday day object},
+        1 : {tuesday day object},
+        2 : {wednesday day object},
+        ...
+        6 : {saturday day object},
+        completed : false 
+    }
+```
+
+The `Day` object will be made up of a String field which tell us what the user learnt that day and a boolean which tells us if the user studied that day.
